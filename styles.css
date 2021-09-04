@@ -17,15 +17,6 @@ h1 {
   align-items: baseline;
 }
 
-@media only screen and (max-width: 680px) {
-    h1 {
-        font-size: 42px;
-    }
-    .logo {
-      height: 38px;
-    }
-}
-
 h2 {
   font-family: 'Roboto Mono', monospace;
   font-size: 18px;
@@ -38,25 +29,14 @@ p {
   padding-bottom: 7px;
 }
 
-.container {
-  padding-top: 10%;
-  padding-bottom: 10%;
-  padding-left: 20%;
-  padding-right: 20%;
-}
-
-.actsOfService:hover {
-  cursor: pointer;
+form {
+  margin-top: 64px;
 }
 
 label {
   font-family: 'Roboto Mono', monospace;
   font-size: 18px;
   font-weight: 600;
-}
-
-form {
-  margin-top: 64px;
 }
 
 textarea {
@@ -93,14 +73,27 @@ button:active {
   transform: translateY(2px);
 }
 
+.container {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
 @media only screen and (max-width: 680px) {
-  .container {
-    padding-top: 10%;
-    padding-bottom: 10%;
-    padding-left: 7%;
-    padding-right: 7%;
-  }
-  textarea {
-    width: 80vw;
-  }
+    h1 {
+        font-size: 42px;
+    }
+    .logo {
+      height: 38px;
+    }
+    .container {
+      padding-top: 10%;
+      padding-bottom: 10%;
+      padding-left: 7%;
+      padding-right: 7%;
+    }
+    textarea {
+      width: 80vw;
+    }
 }
