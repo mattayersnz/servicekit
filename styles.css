@@ -6,8 +6,10 @@ h1 {
   font-weight: 600;
 }
 
-h1:hover {
-  cursor: pointer
+h2 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 32px;
+  font-weight: 600;
 }
 
 p {
