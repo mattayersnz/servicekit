@@ -7,13 +7,14 @@
     }
   </script>
   <link rel="stylesheet" href="styles.css">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
 <body>
-  <div class="container">
+  <div class="container" x-data="{ open: true }">
 
-      <h1> Service Kit </h1> <br>
-      <h2> What is service? </h2>
+    <h1> Service Kit </h1> <br>
+    <h2> What is service? </h2>
 
     <div>
       <p>There is a story told in Christian tradition of a time when a man named Jesus did a small act that was totally surprising in his time and culture.</p>
@@ -35,6 +36,14 @@
       <p>For example, a cafe starts with the simple act of making a good cup of coffee for someone. Then a price for that coffee can be determined by the expense involved in having a good barrister to make the coffee, the coffee machine, ingredients, cafe space and supporting staff. The price of the coffee can be offset by other income from food or other services. The needs of staff to be paid can be met, the needs of equipment suppliers, and so on. This system of parts can become a more sophisticated service over time, but never forget the simple act of service: making someone a good cup of coffee.</p>
       <p>Service is an ongoing effort, but it all involves more service. And you can serve, it is what started it all in the first place.</p>
       <p>A simple act of service.</p>
+    </div>
+
+    <h2 x-on:click="open = !open"> What are some acts of service? </h2>
+
+    <div x-show="open">
+      <p>Indepth Conversations</p>
+      <p>Service Blueprint</p>
+      <p>Prototyping</p>
     </div>
 
   </div>
