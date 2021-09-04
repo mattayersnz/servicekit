@@ -7,12 +7,12 @@
     }
   </script>
   <link rel="stylesheet" href="styles.css">
-  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
 <body>
-  <div class="container" x-data="{ open: true }">
+  <div class="container" x-data="{ open: false }">
 
     <h1> Service Kit </h1> <br>
     <h2> What is service? </h2>
@@ -41,7 +41,7 @@
 
     <br><br>
 
-    <h2 x-on:click="open = !open"> What are some acts of service? </h2>
+    <h2 x-on:click="open = !open" class="actsOfService"> What are some acts of service? </h2>
 
     <div x-show="open">
       <p>Indepth Conversations</p>
